@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cards">
+    <div class="slider">
+        <h2>SLider to change gap</h2>
+        <input type="range" id="fader" min="0" max="70" value="0" step="1" oninput="onInputUpdate(value)">
+        <output for="fader" id="volume">0</output>
+        <h2>choose background color</h2>
+        <input type="color" id="cc" oninput="onColorChange(value)">
+    </div>
+    <div class="card a">1
+        <h4>choose background color</h4>
+        <input type="color"  oninput="onColorChangeIn(value, event)">
+        <button> button <input type="color" oninput="buttonColor(value, event)"> </button>
+    </div>
+    <div class="card b">2
+        <h4>choose background color</h4>
+        <input type="color"  oninput="onColorChangeIn(value, event)">
+        <button> button <input type="color" oninput="buttonColor(value, event)"> </button>
+    </div>
+    <div class="card c">3
+        <h4>choose background color</h4>
+        <input type="color"  oninput="onColorChangeIn(value, event)">
+        <button> button <input type="color" oninput="buttonColor(value, event)"> </button>
+    </div>
+    <div class="card w">4
+        <h4>choose background color</h4>
+        <input type="color"  oninput="onColorChangeIn(value, event)">
+        <button> button <input type="color" oninput="buttonColor(value, event)"> </button>
+    </div>
+    <div class="card e">5
+        <h4>choose background color</h4>
+        <input type="color"  oninput="onColorChangeIn(value, event)">
+        <button> button <input type="color" oninput="buttonColor(value, event)"> </button>
+    </div>
+    <div class="card r">6
+        <h4>choose background color</h4>
+        <input type="color"  oninput="onColorChangeIn(value, event)">
+        <button> button <input type="color" oninput="buttonColor(value, event)"> </button>
+    </div>
+    <div class="card t">7
+        <h4>choose background color</h4>
+        <input type="color"  oninput="onColorChangeIn(value, event)">
+        <button> button <input type="color" oninput="buttonColor(value, event)"> </button>
+    </div>
+    <div class="card y">8
+        <h4>choose background color</h4>
+        <input type="color"  oninput="onColorChangeIn(value, event)">
+        <button> button <input type="color" oninput="buttonColor(value, event)"> </button>
+    </div>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>

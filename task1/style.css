@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+}
+
+.card {
+    background-color: #ffc77e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: grid;
+    justify-content: center;
+    grid-auto-rows: 360px;
+    grid-template-columns: repeat(4, 260px);
+    grid-template-rows: repeat(5, 180px);
+    grid-template-areas:
+             'title title title title'
+             'wide1 wide1 long1 long2'
+             'wide2 wide2 long1 long2'
+             'long3 long4 wide3 wide3'
+             'long3 long4 wide4 wide4';
+}
+
+output{
+    display: inline-block;
+    background: #6ef8f8;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+.slider{
+    grid-area: title;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.a {grid-area: wide1;}
+
+.b {grid-area: wide2;}
+
+.c {grid-area: long1;}
+
+.w {grid-area: long2;}
+
+.e {grid-area: long3;}
+
+.r {grid-area: long4;}
+
+.t {grid-area: wide3;}
+
+.y {grid-area: wide4;}
